@@ -2,7 +2,10 @@
 
 function largerNum(num1, num2) {
     // you code here
-
+    if(num1 - num2 > 0){
+        return num1
+    }
+    else return num2
 }
 
 // 2. Given two numbers, amount correct and amount possible of a test, return the corresponding letter grade.
@@ -14,6 +17,17 @@ function largerNum(num1, num2) {
 // output: "F"
 
 function testGrader(score, possible) {
+   let percent =score / possible
+   if(percent >= .90)
+    return "A"
+    if(percent >= .80 && percent < .90)
+    return "B" 
+    if(percent >= .70  && percent < .80)
+    return "C" 
+    if(percent >= .60 && percent < .70)
+    return "D"
+    if(percent >= .60)
+    return "F" 
 
 }
 
@@ -30,7 +44,8 @@ function testGrader(score, possible) {
 
 function timeOfDayGreeting(hour) {
     // you code below
-
+    
+    }
 }
 
 //4. Write a function that will take in a number and return 'fever' if it indicates a fever (over 98.6) and additionally if the person should go to the hospital (at or above 103) 'fever go to hospital' (hint: try this with string concatenation), if it is under return 'no fever'
